@@ -50,7 +50,7 @@ public class CategoriaDAO {
 
 	public Categoria retrieve(String id) {
 
-		String sql = "Select categoria_id, CAP_FIRST(categoria_nome) as categoria_nome FROM Categoria WHERE Categoria_id = ? ";
+		String sql = "Select categoria_id, CAP_FIRST(categoria_nome) as categoria_nome FROM categoria WHERE categoria_id = ? ";
 
 		Categoria Categoria = null;
 		try {
