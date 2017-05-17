@@ -8,12 +8,12 @@ public class ConnectionFactory {
 	public static Connection getConnection()  throws SQLException , ClassNotFoundException {  
 		Class.forName("com.mysql.jdbc.Driver");
 
-		//Configura os par‚metros da conex„o  
+		//Configura os par√¢metros da conex√£o  
 		String url = "jdbc:mysql://localhost:3306/brinquedos";  
 		String username = "patterson";   
-		String password = "*sue1990*";  
+		String password = "1234";  
 
-		//Processa e retorna a conex„o
+		//Processa e retorna a conex√£o
 		return DriverManager.getConnection(url, username, password);  
 	}	
 }
